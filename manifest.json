@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Lock",
+  "version": "1.0.0",
+  "description": "Block keyboard input on a tab while monitoring or reading. Click the icon to lock/unlock.",
+  "permissions": ["activeTab", "tabs", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tab Lock — Unlocked",
+    "default_icon": {
+      "16": "icons/unlocked-16.png",
+      "48": "icons/unlocked-48.png",
+      "128": "icons/unlocked-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/unlocked-16.png",
+    "48": "icons/unlocked-48.png",
+    "128": "icons/unlocked-128.png"
+  }
+}
